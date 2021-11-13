@@ -19,6 +19,6 @@ This project implements stratified random sampling to randomly split data by tas
 
 #Similarity Features based on N-grams
 Containment is used for this purpose. Containment is defined as the intersection of the n-gram word count of the Wikipedia Source Text (S) with the n-gram word count of the Student Answer Text (S) divided by the n-gram word count of the Student Answer Text.
-$$ \frac{\sum{count(\text{ngram}_{A}) \cap count(\text{ngram}_{S})}}{\sum{count(\text{ngram}_{A})}} $$
+
 If the two texts have no n-grams in common, the containment will be 0, but if all their n-grams intersect then the containment will be 1.
 
